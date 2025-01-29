@@ -164,7 +164,7 @@ def attack_command(message):
     except Exception as e:
         logging.error(f"Error in attack command: {e}")
 
-@bot.message_handler(commands=['Attack'])
+@bot.message_handler(commands=['attack'])
 def attack_command(message):
     user_id = message.from_user.id
     chat_id = message.chat.id
